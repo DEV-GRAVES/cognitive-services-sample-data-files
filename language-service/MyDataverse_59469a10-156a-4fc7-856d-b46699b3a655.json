@@ -1,0 +1,345 @@
+{
+	"info": {
+		"_postman_id": "0cad659c-5e8b-43d0-96df-ec52ada3df97",
+		"name": "MyDataverse",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API Web Call",
+			"id": "0fe6d796-1f14-4325-b9f2-ac1c4be169bd",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyIsImtpZCI6ImpTMVhvMU9XRGpfNTJ2YndHTmd2UU8yVnpNYyJ9.eyJhdWQiOiJodHRwczovL3Njcy1kYXRhLmNybTQuZHluYW1pY3MuY29tLyIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0LzY1OWMzYTkwLWVjOTAtNDc3Mi1iNzcyLWNlYmUyMDUwYTgyZS8iLCJpYXQiOjE2NDcwMzA5NzcsIm5iZiI6MTY0NzAzMDk3NywiZXhwIjoxNjQ3MDM1NTcwLCJhY3IiOiIxIiwiYWlvIjoiQVNRQTIvOFRBQUFBUXRiRjFQalFSNjhxL2E2UkxlYU1JUEhETE40S0dxUUIxeWdVYllvMVZ1ND0iLCJhbXIiOlsicHdkIl0sImFwcGlkIjoiNTFmODE0ODktMTJlZS00YTllLWFhYWUtYTI1OTFmNDU5ODdkIiwiYXBwaWRhY3IiOiIwIiwiZmFtaWx5X25hbWUiOiJHcmF2ZXMiLCJnaXZlbl9uYW1lIjoiQ2hyaXMiLCJpcGFkZHIiOiI2My43OC4xNDkuMTU0IiwibmFtZSI6IkdyYXZlcywgQ2hyaXMiLCJvaWQiOiJiMTQ1OGQxMi05OTlhLTQyZjAtOGQ2Ni1hYTRkMjI2NmQ2ZDkiLCJvbnByZW1fc2lkIjoiUy0xLTUtMjEtMjIyOTk3Mzk5OS0yODkwMzAzODU1LTg3MjI2Mzk3MC0zOTY2MiIsInB1aWQiOiIxMDAzMjAwMEYxQTI5MTM4IiwicmgiOiIwLkFUd0FrRHFjWlpEc2NrZTNjczYtSUZDb0xnY0FBQUFBQUFBQXdBQUFBQUFBQUFBOEFDWS4iLCJzY3AiOiJ1c2VyX2ltcGVyc29uYXRpb24iLCJzdWIiOiJFaWZpRlAyOGdYc09QZzgzVnE3Z0laUE9wWWJHTVRUc0l3NmxsUDZvX1lNIiwidGlkIjoiNjU5YzNhOTAtZWM5MC00NzcyLWI3NzItY2ViZTIwNTBhODJlIiwidW5pcXVlX25hbWUiOiJjaHJpc3RvcGhlci5ncmF2ZXNAYXJ2YXRvLXNjcy5jb20iLCJ1cG4iOiJjaHJpc3RvcGhlci5ncmF2ZXNAYXJ2YXRvLXNjcy5jb20iLCJ1dGkiOiJSZXlVTmRNWmowS1hjRWR3WjAtSUFBIiwidmVyIjoiMS4wIn0.AWpwBCKkbK9Uh70xDxA7SrrTi1xleYcJc97PqJ8HUN2jzttZulQIEdAtG9J-YtWFVXZXW3D0uPbASStZ2Mlt3G_xoIpzxuy8N_e-FrS7ACx1jWqveURWolOkIQ6JsGtXLGgEqlwxVvUFUqeLdmwgIBTt-D_vKdFsgFsKUDOaS8eM80G8CODKAfwf523-tsUHBjjII21MBNyJGXuUv0oaY7TWNQgE2AnF3OQVNUwHgcPk21HeznTMMsfCraCGOMxEfZsxL6sllIqDYaqnqd2_-UHHlPsSmvl40oZGeI6eQ4pB3fhXCWV7S2HcKmPHcKgOpq1X4v03pAxpm8Y9qBHM7Q",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "{{clientid}}",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "{{authurl}}",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "{{callback}}",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "implicit",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{webapiurl}}WhoAmI",
+					"host": [
+						"{{webapiurl}}WhoAmI"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "aa8e2c10-b867-4b64-bc5f-b4297aaec76b",
+					"name": "MyDataverseEnvironmentAuth",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{webapiurl}}WhoAmI",
+							"host": [
+								"{{webapiurl}}WhoAmI"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS,GET,HEAD,POST"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; odata.metadata=minimal"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-ms-service-request-id",
+							"value": "0736a5d8-b42d-4a68-b6bb-e472e6f1afa4"
+						},
+						{
+							"key": "x-ms-service-request-id",
+							"value": "284fc37b-1d05-44ea-9391-9d5ddd24cce5"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "ARRAffinity=63fc5e2e317bf747454eb399629891ef5975c394d6c0a808557a50f3fbe03e54; domain=scs-data.crm4.dynamics.com; path=/; secure; HttpOnly"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "REQ_ID",
+							"value": "284fc37b-1d05-44ea-9391-9d5ddd24cce5"
+						},
+						{
+							"key": "AuthActivityId",
+							"value": "a99a3d84-629a-4dac-b0fd-a2d3db645c74"
+						},
+						{
+							"key": "x-ms-dop-hint",
+							"value": "8"
+						},
+						{
+							"key": "x-ms-ratelimit-time-remaining-xrm-requests",
+							"value": "1,200.00"
+						},
+						{
+							"key": "x-ms-ratelimit-burst-remaining-xrm-requests",
+							"value": "5999"
+						},
+						{
+							"key": "OData-Version",
+							"value": "4.0"
+						},
+						{
+							"key": "X-Source",
+							"value": "15111922711120113813650153839619220717022211725382406619191731111001062211381515421157"
+						},
+						{
+							"key": "X-Source",
+							"value": "42154881151251891513619720997116232157471211598111111532087240253363625116484351"
+						},
+						{
+							"key": "Public",
+							"value": "OPTIONS,GET,HEAD,POST"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Jan 2022 21:17:08 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"@odata.context\": \"https://scs-data.crm4.dynamics.com/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.WhoAmIResponse\",\n    \"BusinessUnitId\": \"5ff2f3f1-ca78-eb11-b1ab-000d3abad2bf\",\n    \"UserId\": \"5885da6a-097e-eb11-a812-000d3addcfa3\",\n    \"OrganizationId\": \"781d6a0d-0d46-4326-8c5c-abb3ffc71aab\"\n}"
+				}
+			]
+		},
+		{
+			"name": "MyDataverseEnvironmentAuth Copy",
+			"id": "3470e256-4869-47cc-81db-d04926a41beb",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientId",
+							"value": "{{clientid}}",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "{{authurl}}",
+							"type": "string"
+						},
+						{
+							"key": "redirect_uri",
+							"value": "{{callback}}",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "implicit",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{webapiurl}}WhoAmI",
+					"host": [
+						"{{webapiurl}}WhoAmI"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "6b7d7d52-6775-4ddb-8259-f61e12abc20d",
+					"name": "MyDataverseEnvironmentAuth",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{webapiurl}}WhoAmI",
+							"host": [
+								"{{webapiurl}}WhoAmI"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache"
+						},
+						{
+							"key": "Allow",
+							"value": "OPTIONS,GET,HEAD,POST"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; odata.metadata=minimal"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Expires",
+							"value": "-1"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "x-ms-service-request-id",
+							"value": "0736a5d8-b42d-4a68-b6bb-e472e6f1afa4"
+						},
+						{
+							"key": "x-ms-service-request-id",
+							"value": "284fc37b-1d05-44ea-9391-9d5ddd24cce5"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "ARRAffinity=63fc5e2e317bf747454eb399629891ef5975c394d6c0a808557a50f3fbe03e54; domain=scs-data.crm4.dynamics.com; path=/; secure; HttpOnly"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "REQ_ID",
+							"value": "284fc37b-1d05-44ea-9391-9d5ddd24cce5"
+						},
+						{
+							"key": "AuthActivityId",
+							"value": "a99a3d84-629a-4dac-b0fd-a2d3db645c74"
+						},
+						{
+							"key": "x-ms-dop-hint",
+							"value": "8"
+						},
+						{
+							"key": "x-ms-ratelimit-time-remaining-xrm-requests",
+							"value": "1,200.00"
+						},
+						{
+							"key": "x-ms-ratelimit-burst-remaining-xrm-requests",
+							"value": "5999"
+						},
+						{
+							"key": "OData-Version",
+							"value": "4.0"
+						},
+						{
+							"key": "X-Source",
+							"value": "15111922711120113813650153839619220717022211725382406619191731111001062211381515421157"
+						},
+						{
+							"key": "X-Source",
+							"value": "42154881151251891513619720997116232157471211598111111532087240253363625116484351"
+						},
+						{
+							"key": "Public",
+							"value": "OPTIONS,GET,HEAD,POST"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 26 Jan 2022 21:17:08 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "230"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n    \"@odata.context\": \"https://scs-data.crm4.dynamics.com/api/data/v9.0/$metadata#Microsoft.Dynamics.CRM.WhoAmIResponse\",\n    \"BusinessUnitId\": \"5ff2f3f1-ca78-eb11-b1ab-000d3abad2bf\",\n    \"UserId\": \"5885da6a-097e-eb11-a812-000d3addcfa3\",\n    \"OrganizationId\": \"781d6a0d-0d46-4326-8c5c-abb3ffc71aab\"\n}"
+				}
+			]
+		}
+	]
+}
